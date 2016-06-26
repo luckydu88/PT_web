@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/fonts.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    
+    <title> Mon portefolio </title>
+    
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+       
+        
+
+
+ <!-- Fixe le nav à l'écran --> 
+    
+     <script type="text/javascript">
+
+        jQuery(window).scroll(function () {
+          if (jQuery(this).scrollTop() == 0) {
+            $('header').addClass('reachedTop');
+       
+          } else {
+            $('header').removeClass('reachedTop');
+          }
+        });
+     
+ 
+         
+      </script>
+
+    
+       <!-- decroche le nav lors du scroll vers le bas -->
+       
+        <script>
+            
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 2;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+           
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            
+           
+            if (st > lastScrollTop && st > navbarHeight){
+              
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+               
+                if(st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+        </script> 
+
+    
+</head>
+    
+<body>
+
+
+
+
+<!-- DROPDOWN MENU --> 
+
+
+
+<header class="nav-down reachedTop">
+    <div class="wrapper" id="wrapper">
+      <div class="row">
+
+
+         <div class="small-2  columns">
+
+          <a href="#intro" class="logo">LP<span>.</span></a>            
+        </div>
+
+
+         <div class="small-10  columns">
+
+           <ul class="menu">
+                <li> <a href="#apropos">A propos</a></li>
+                 <li> <a href="#services">Services</a></li>
+                 <li> <a href="#projects">Réalisations</a></li>
+                  <li><a href="#hello">Contact</a></li>
+           </ul>
+            
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+<!-- FIN MENU -->
+
+<div class="main" id="main">
+    
+    <!-- début section intro -->
+    
+    <section id="luc" class="luc">
+        
+        
+        
+         <div class="row" id="middle_row" style="text-align: center;">
+        
+        
+                    
+                     <h1 class='elegantshadow'>Luc Perri</h1>
+        
+        </div>
+        
+        
+        
+    </section>
+    
+    
+
+	<section id="intro" class="intro">
+  
+
+	
+	    <div class="row" id="middle_row">
+	        
+	        
+	        <div class="medium-6  columns" style="text-align:center;position:relative;">
+                     
+                      <img src="images/lucky_2.png" id="moi" class="moi" alt="moi">
+                    
+                      
+                      
+                      
+             </div>
+             <div class="medium-6 columns">
+                   
+                        
+
+                        <section class="cd-intro">
+                          <h1 class="cd-headline clip is-full-width">
+                            <span class="design">Je fais</span><br>
+                            
+                            <span class="cd-words-wrapper" style="width: 385px;">
+                             
+                              <b class="is-hidden">du design <span class="dot">.</span></b>
+                              <b class="is-visible">du graphisme <span class="dot">.</span></b>
+                              <b class="is-hidden">du dessin<span class="dot">.</span></b>
+                             
+                            </span>
+                          </h1>
+                        </section> 
+
+                        <a href="#apropos" class="btn"> En savoir plus </a>
+                            
+                            
+             </div>
+	        
+	        
+	        
+	        
+	    </div>
+	    
+	    
+	</section>
+	
+	<!-- fin de la section intro -->
+	
+    <!-- début de la section à propos -->
+	
+	<section id="apropos" class="apropos">
+	 
+	  <section class="apropos" id="apropos" >
+
+        
+
+              <div class="row">
+
+                <div class="large-12">
+                      <h1>A propos.</h1>
+                      <p> Je m'apelle Luc, étudiant en DUT MMI , j'habite à Haguenau. Je suis passionné par le graphisme.</p>
+                </div>
+              </div>
+
+
+
+              <div class="row" style="margin-top: 20px;">
+
+                   <div class="medium-3 columns">
+                      <h2> Logiciel utilisé</h2>
+                   </div>
+
+
+                     <div class="medium-9  columns">
+                        <ul class="tools">
+
+                            
+                            
+                            <li class="ps" > </li>
+                            <li class="ai"> </li>
+                            <li class="ae" > </li>
+                            <li class="sketch"> </li>
+
+
+                        </ul>
+                   </div>
+
+              </div>
+
+
+
+              <div class="row" style="margin-top: 20px;">
+
+                   <div class="medium-3 columns">
+                      <h2> Languages web </h2>
+                   </div>
+
+
+                     <div class="medium-9  columns">
+                        <ul class="lang">
+
+                            <li>html</li>
+                            <li>css</li>
+                            <li>javascript</li>
+
+
+
+                        </ul>
+                      
+                   </div>
+
+              </div>
+
+
+              <div class="row" style="margin-top: 25px;">
+
+                   <div class="medium-3 columns">
+                      <h2> Activités</h2>
+                   </div>
+
+
+                     <div class="medium-9  columns">
+                        <ul class="activites">
+
+                            <li class="piano"></li>
+                            <li class="vtt"></li>
+
+                            
+                        </ul>
+                   </div>
+
+              </div>
+              
+              
+            
+              <div class="row" style="margin-top: 25px;">
+
+                   <div class="medium-3 columns">
+                      <h2> Ma formation </h2>
+                   </div>
+
+
+                     <div class="medium-9  columns">
+                        <ul class="lang">
+
+                            <li> DUT MMI Haguenau </li>
+                            <li> Bac STI2D </li>
+
+                            
+                        </ul>
+                   </div>
+
+              </div>    
+                
+               <div class="row" style="margin-top: 25px;padding-bottom: 50px;">
+
+                   <div class="medium-4 columns">
+                      <a href="/images/CV3.pdf" class="btn" style="color: white;"> Télécharger mon cv </a>
+                   </div>
+                   
+              </div>               
+
+
+    </section>
+	
+	</section>
+	
+	<!-- fin de la section à propos -->
+	
+	<!-- début section mes services -->
+	
+	<section id="services" class="services">
+	 
+	  <section class="services" id="services" >
+	  
+	  
+        <div class="row">
+
+                <div class="large-12">
+                      <h1> Mes services.</h1>
+                      
+                </div>
+              </div>
+
+         
+              <div class="row" style="margin-top: 20px;">
+
+                   <div class="medium-7 columns">
+                      <h2> Charte graphique </h2>
+                      
+                          <div class="medium-4  columns">
+                       
+                        
+                            
+                            <div class="charte" > <img src="images/charte.png" alt="charte">                                  
+                            </div>
+                        
+                        
+                           </div>
+                 
+                   </div>
+
+                   <div class="medium-3 columns">
+                      <h2> Print </h2>
+                      
+                          <div class="medium-9  columns" style="margin-bottom : 20px;">
+                        
+                            <div class="print" >  <img src="images/printe.png" alt="print"> 
+                 
+                           </div>
+    
+                          </div>
+                  </div>   
+     
+                 <div class="medium-7 columns">
+                      <h2> Flyer/Affiches </h2>
+                      
+                          <div class="medium-4  columns">
+                       
+                        
+                            
+                            <div class="flyer" > <img src="images/flyer.png" alt="flyer">                                  
+                            </div>
+                        
+                        
+                           </div>
+                 
+                   </div>
+
+                   <div class="medium-5 columns" style="margin-bottom: 50px;">
+                      <h2> Logo </h2>
+                      
+                          <div class="medium-9  columns">
+                        
+                            <div class="logo" >  <img src="images/logo.png" alt="logo"> 
+                 
+                           </div>
+    
+                          </div>
+                          
+                       </div>
+                       
+                  </div>   
+     
+      </section>
+        
+    </section>
+
+	
+	
+	
+	<!-- fin section mes services --> 
+	
+     <!-- début de la section portefolio -->
+      
+    <section class="projects" id="projects">
+
+       <div class="row">
+         
+          <h1 style="margin-bottom: 100px;">Mes réalisations.</h1>
+          
+        
+           
+
+               
+            <div id="cbp-fwslider" class="cbp-fwslider">
+              <ul>
+                   <li>
+
+                       <a href="#" class="prjct_img"><img src="images/affiche_porte_ouvertesbleu.jpg" style="width:70%;" alt="aff1"/></a>
+
+                       <h2 class="name">Affiche portes ouvertes</h2>
+                       <p class="desc"> Réalisé pour le lycée de schirmeck (67) </p>
+                       <a class="btn project" target="_blank" href="images/affiche_porte_ouvertesbleu.jpg">Afficher en grand</a>
+
+
+                    </li>
+                    
+                     <li>
+
+                    <a href="#" class="prjct_img"><img src="images/flyer_pobleu.jpg" style="width:70%;" alt="aff2"/></a>
+                      <h2 class="name"> Flyer</h2>
+                       <p class="desc"> Réalisé pour le lycée de schirmeck (67) </p>
+                       <a class="btn project" target="_blank" href="images/flyer_pobleu.jpg">Afficher en grand</a>
+
+                  </li>
+
+                <li>
+
+                    <a href="#" class="prjct_img"><img src="images/affiches_doublesbleu.jpg" style="width:70%;" alt="aff3"/></a>
+                      <h2 class="name"> Flyer</h2>
+                       <p class="desc"> Flyer d'une marque fictive </p>
+                       <a class="btn project" target="_blank" href="images/affiches_doublesbleu.jpg">Afficher en grand</a>
+
+                  </li>
+
+
+                <li>
+                   <a href="#" class="prjct_img"><img src="images/Affiche_defilebleu.jpg" style="width:70%;" alt="aff4"/></a>
+                      <h2 class="name">Affiche défilé</h2>
+                       <p class="desc"> Réalisé dans le cadre d'un projet </p>
+                       <a class="btn project" target="_blank" href="images/Affiche_defilebleu.jpg">Afficher en grand</a>
+
+                </li>
+
+
+               
+
+
+                 <li>
+                        <a href="#" class="prjct_img"><img src="images/Affiche_artbleu.jpg" style="width:70%;" alt="aff5"/></a>
+                      <h2 class="name">Affiche porte ouvertes IUT</h2>
+                       <p class="desc">Réalisé dans le cadre d'un projet.</p>
+                       <a class="btn project" target="_blank" href="images/Affiche_artbleu.jpg">Afficher en grand</a>
+
+                </li>
+                
+                
+                 <li>
+                        <a href="#" class="prjct_img"><img src="images/logolucky-bleu.jpg" style="width:70%;" alt="logo1"/></a>
+                      <h2 class="name">Logo</h2>
+                       <p class="desc">Réalisé pour le loisir.</p>
+                       <a class="btn project" target="_blank" href="images/logolucky-bleu.jpg">Afficher en grand</a>
+
+                </li>
+                
+                 <li>
+                        <a href="#" class="prjct_img"><img src="images/text_chocolatfroid.jpg" style="width:70%;" alt="logo1"/></a>
+                      <h2 class="name">Typo</h2>
+                       <p class="desc">Réalisé pour le loisir.</p>
+                       <a class="btn project" target="_blank" href="images/text_chocolatfroid.jpg">Afficher en grand</a>
+
+                </li>
+                
+                <li>
+                        <a href="#" class="prjct_img"><img src="images/site_ptcom.jpg" style="width:70%;" alt="logo1"/></a>
+                      <h2 class="name">Site Walygator</h2>
+                       <p class="desc">Réalisé pour un projet sous wordpress</p>
+                       <a class="btn project" target="_blank" href="images/site_ptcom.jpg">Afficher en grand</a>
+
+                </li>
+                
+              </ul>
+            </div>
+
+      </div>
+
+
+
+    </section>
+     
+      <!-- fin de la section portefolio -->
+      
+      
+      <!-- début de la section contact -->    
+       
+    <section class="contact" id="hello">
+
+       <div class="row">
+         
+            <div class="large-6 columns" style="margin-left: 0;padding-left: 0;">
+                     
+                      <h1>Contact.</h1>
+                      
+                      <p>Je suis à votre écoute si besoin <br>vous pouvez me contacter</p>
+                      
+           </div>  
+                        <div class="large-6  columns">
+                     
+                         <a href="mailto:luc.perri88@outlook.fr" class="email">luc.perri88@outlook.fr</a>
+                         
+
+                      <div style="clear:both"></div>
+
+                      <ul class="icons">
+                        
+                         <li> <a href="http://Youtube.com/luc.perri" target="_blank" class="fa youtube"><span class="fa-youtube"></span></a></li>
+
+                         <li> <a href="http://instagram.com/luc.perri" target="_blank" class="fa instagram"><span class="fa-instagram"></span></a></li>
+
+
+                        
+
+
+                         <li> <a href="http://facebook.com/luc.perri" target="_blank" class="fa facebook"><span class="fa-facebook"></span></a></li>
+
+                          <li> <a href="http://twitter.com/luc.perri" target="_blank" class="fa twitter"><span class="fa-twitter"></span></a></li>
+
+                     
+
+                      </ul>
+
+                       <div style="clear:both"></div>
+
+                   
+            </div>
+            
+        </div>    
+         
+    </section>
+
+     <!-- fin de la section contact -->   
+    
+   
+   <!-- slider -->
+   
+    <script src="js/jquery.cbpFWSlider.min.js"></script>
+    <script>
+      $( function() {
+        
+        $( '#cbp-fwslider' ).cbpFWSlider();
+
+      } );
+    </script>
+
+    
+        
+        <!-- fin slider -->
+        
+        <!-- Rotation du text -->
+        
+        
+        <script src="js/Rotation.js"></script>
+
+
+
+
+    </body>
+    
+</html>
